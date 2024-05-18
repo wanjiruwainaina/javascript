@@ -5,7 +5,7 @@
 // If someone passes all the subjects, the output should be, "You can choose a course of your choice"
 // Should tell a student when he or she has not qualified for any of the courses
 
-    let maths ="pass";
+    let maths ="fail";
     let english= "pass";
     let chemistry= "pass";
     let physics= "pass";
