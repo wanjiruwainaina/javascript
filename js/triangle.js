@@ -3,11 +3,11 @@ function drawTriangle(rows) {
         let line = '';
         if (i <= 9) {
             for (let j = 1; j <= i; j++) {
-                line += j;
+                line = j +1;
             }
         } else {
             for (let j = 1; j <= 9; j++) {
-                line += j;
+                line = j + 1;
             }
             line += (i - 9);
         }
