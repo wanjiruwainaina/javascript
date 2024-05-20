@@ -1,50 +1,82 @@
-{function calculateAverageMarks(arrayOfStudents) {
+// 
+{
+    function getaverage(marks){
+        let sum=0
+        for(let i=0;i<=marks.length-1; i++){
 
-    arrayOfStudents.forEach(student) 
-        {
-            const results = [
-                {name: "Stephen",
-                marks: [45, 78, 90, 32, 67]},
-                {name: "Maryanne",
-                marks: [89, 78, 10, 67, 47]},
-                {name: "Kelvin",
-                 marks: [55, 88, 94, 52, 37]},
-                {name: "Claire",
-                 marks: [44, 68, 88, 62, 77]}]
-        {const average = student.marks((sum(student.marks.length)) / student.marks.length)
-        student.average = average;}
-    };
-    arrayOfStudents.sort((a,b),b.average - a.average);
+        }
+    }
+{
+    // an array of objects
+    //objects: students: marks, name
+    // get the average marks, print out( sorted )
+    //function to get the average in an array:
+    //example: [78, 89, 78, 90, 65]
+    function getAverage(marks){
+        let sum = 0;
+        for (let i = 0; i <= marks.length-1; i++){
+            sum = sum + marks[i];
+        }
+        return sum / marks.length;
+    }
+   //
+   sample_students = [
+    {
+        name: "John",
+        marks: [78, 90, 54, 55, 32]
+    },
+    {
+        name: "Dennis",
+        marks: [89, 90, 56, 44, 58]
+    },
+    {
+        name: "Agnes",
+        marks: [90, 56, 45, 88, 90]
+    },
+    {
+        name: "Alvin",
+        marks: [81, 56, 77, 88, 96]
+    }
+   ]
+   function getStudentsAverage(students){
+    let student_avg = []
+    for (i = 0; i <= students.length-1; i++){
+        student_rslts = {
+            name: students[i].name,
+            avg: getAverage(students[i].marks)
+        }
+        if(i == 0){
+            student_avg.push(student_results)
+        }else{
+            if (student_rslts.avg > student_avg[0].avg){
+                let new_array = []
+                new_array.push(student_results)
+                for (k = 0; k < student_avg.length; k++){
+                    new_array.push(student_avg[k])
+                }
+                student_avg = new_array
+            }else if(student_rslts.avg > student_avg[i - 1].avg){
+                popped_student = student_avg.pop()
+                student_avg.push(student_rslts)
+                student_avg.push(popped_student)
+            }
+            else{
+                student_avg.push(student_rslts)
+            }
+        }
+    }
+    console.log(student_avg)
+   }
+   getStudentsAverage(sample_students)
 
 
-    arrayOfStudents.forEach(student ) 
-        console.log([student.name],[student.average])
-    };
-};
 
 
-calculateAverageMarks(arrayOfStudents);
 
-const numbers=[1,2,3,4,5] 
-    console.log(number[5])
 
-// {
-//     const results = [
-//      {
-//          name: "Jane",
-//          marks: [89, 45, 67, 89, 67]
-//      },
-//      {
-//          name: "Alfred",
-//          marks: [89, 56, 43, 78, 89]
-//      },
-//      {
-//          name:"Steve",
-//          marks: [67, 89, 56, 44, 90]
-//      }
-//     ]
-//     console.log(results[2].marks[3])
-//     console.log(results[1].name + ": " + results[1].marks[3])
-//  }
- 
- 
+
+}
+
+
+
+
