@@ -17,27 +17,3 @@
     }
 console.log(totalsum);
 
-// function sumOfInnerArrays(arrays) {
-//     let result = [];
-//     let totalSum = 0;
-
-//     arrays.forEach(innerArray => {
-//         let sum = innerArray.reduce((acc, val) => acc + val, 0);
-//         result.push(sum);
-//         totalSum += sum;
-//     });
-
-//     console.log("Total sum:", totalSum);
-//     return result;
-// }
-
-// Test the function
-let arrays = [[8,9,4,56,78], [67, 89, 98], [56,45,32,45], [45,67,80]];
-console.log(sumOfInnerArrays(arrays)); // Output: [155, 254, 178, 192]
-
-
-
-
-
-
-
