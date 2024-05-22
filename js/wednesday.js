@@ -2,14 +2,7 @@
 //        From the above array example it should return: [155, 254, 178, 192] and prints 779 as the total sum.
 //        Use  forEach loops
 // {
-//     const arr = [65536,7,8,9,5,4,7,9] 
-    
-//     arr.forEach((value,index)=> {
-//        console.log(value**0.25)
-       
-//     })
-   
-//    }
+
 { 
     let arrays=[[8,9,4,56,78,], [67, 89, 98], [56,45,32,45], [45,67,80]];
     let sum = 0;
